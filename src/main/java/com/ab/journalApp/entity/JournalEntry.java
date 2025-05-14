@@ -4,12 +4,10 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.xml.crypto.Data;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Document(collection = "journal_entries")
-public class JournalEntity {
+public class JournalEntry {
     @Id
     private ObjectId id;
     // The @Id annotation indicates that this field is the primary key in the MongoDB collection.
